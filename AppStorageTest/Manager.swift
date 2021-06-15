@@ -7,15 +7,13 @@
 
 import Foundation
 
-class Manager {
-    static let shared = Manager()
-    
+class Manager {    
     var name: String {
-        UserDefaults.standard.string(forKey: Preferences.name.rawValue) ?? ""
+        UserDefaults.standard.string(forKey: Prefs.Key.name.rawValue) ?? ""
     }
     
     var volume: Double {
-        UserDefaults.standard.double(forKey: Preferences.volume.rawValue)
+        UserDefaults.standard.double(forKey: Prefs.Key.volume.rawValue)
     }
     
     func doSomething() {

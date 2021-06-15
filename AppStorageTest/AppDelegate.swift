@@ -13,8 +13,8 @@ import AppKit
         print("applicationDidFinishLaunching")
         
         var prefs = [String: Any]()
-        prefs[Preferences.name.rawValue] = "Pippi Langstrumpf"
-        prefs[Preferences.volume.rawValue] = 5.0
+        prefs[Prefs.Key.name.rawValue] = "Pippi Langstrumpf"
+        prefs[Prefs.Key.volume.rawValue] = 5.0
         
         UserDefaults.standard.register(defaults: prefs)
     }

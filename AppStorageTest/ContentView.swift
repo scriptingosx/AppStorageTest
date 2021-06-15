@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage(Preferences.name.rawValue) var name: String = ""
-    @AppStorage(Preferences.volume.rawValue) var volume: Double = 0.0
-    
+    @AppStorage(Prefs.Key.name.rawValue) var name: String = ""
+    @AppStorage(Prefs.Key.volume.rawValue) var volume: Double = 0.0
+    @State var manager = Manager()
     var body: some View {
         VStack {
             Text("Hello, \(name)")
             ProgressView(value: volume, total: 10.0).padding()
-            Button(action: Manager.shared.doSomething) {
+            Button(action: manager.doSomething) {
                 Text("Do Something")
             }.padding()
         }

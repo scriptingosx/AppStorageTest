@@ -14,7 +14,7 @@
 		C635B0CC2678CE72001EEA82 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635B0CB2678CE72001EEA82 /* SettingsView.swift */; };
 		C635B0CE2678D004001EEA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635B0CD2678D004001EEA82 /* AppDelegate.swift */; };
 		C635B0D02678D108001EEA82 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635B0CF2678D108001EEA82 /* Manager.swift */; };
-		C635B0D22678D4E4001EEA82 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635B0D12678D4E4001EEA82 /* Preferences.swift */; };
+		C635B0D22678D4E4001EEA82 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635B0D12678D4E4001EEA82 /* Prefs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		C635B0CB2678CE72001EEA82 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C635B0CD2678D004001EEA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C635B0CF2678D108001EEA82 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		C635B0D12678D4E4001EEA82 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		C635B0D12678D4E4001EEA82 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			children = (
 				C635B0BB2678CE16001EEA82 /* AppStorageTestApp.swift */,
 				C635B0CD2678D004001EEA82 /* AppDelegate.swift */,
-				C635B0D12678D4E4001EEA82 /* Preferences.swift */,
+				C635B0D12678D4E4001EEA82 /* Prefs.swift */,
 				C635B0CB2678CE72001EEA82 /* SettingsView.swift */,
 				C635B0BD2678CE16001EEA82 /* ContentView.swift */,
 				C635B0CF2678D108001EEA82 /* Manager.swift */,
@@ -151,7 +151,7 @@
 			files = (
 				C635B0CE2678D004001EEA82 /* AppDelegate.swift in Sources */,
 				C635B0CC2678CE72001EEA82 /* SettingsView.swift in Sources */,
-				C635B0D22678D4E4001EEA82 /* Preferences.swift in Sources */,
+				C635B0D22678D4E4001EEA82 /* Prefs.swift in Sources */,
 				C635B0BE2678CE16001EEA82 /* ContentView.swift in Sources */,
 				C635B0BC2678CE16001EEA82 /* AppStorageTestApp.swift in Sources */,
 				C635B0D02678D108001EEA82 /* Manager.swift in Sources */,

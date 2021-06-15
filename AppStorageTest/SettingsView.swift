@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage(Preferences.name.rawValue) var name: String = ""
-    @AppStorage(Preferences.volume.rawValue) var volume: Double = 0.0
+    @AppStorage(Prefs.Key.name.rawValue) var name: String = ""
+    @AppStorage(Prefs.Key.volume.rawValue) var volume: Double = 0.0
     
     let labelWidth = 60.0
     
