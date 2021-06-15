@@ -8,19 +8,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage(Prefs.Key.name.rawValue) var name: String = ""
-    @AppStorage(Prefs.Key.volume.rawValue) var volume: Double = 0.0
+    @AppStorage(Prefs.key(.name)) var name: String = ""
+    @AppStorage(Prefs.key(.volume)) var volume: Double = 0.0
     
     let labelWidth = 60.0
-    
-    let volumeFormatter: NumberFormatter = {
-        var fmt = NumberFormatter()
-        fmt.numberStyle = .decimal
-        fmt.minimumFractionDigits = 1
-        fmt.maximumFractionDigits = 1
-        fmt.alwaysShowsDecimalSeparator = true
-        return fmt
-    }()
     
     var body: some View {
         Form {
@@ -32,7 +23,7 @@ struct SettingsView: View {
                 HStack {
                     Text("Volume:").frame(width: labelWidth, alignment: .trailing)
                     Slider(value: $volume, in: 0.0...11.0)
-                    TextField("Volume", value: $volume, formatter: volumeFormatter)
+                    TextField("Volume", value: $volume, formatter: Prefs.volumeFormatter)
                     .frame(width:50)
                 }
             }

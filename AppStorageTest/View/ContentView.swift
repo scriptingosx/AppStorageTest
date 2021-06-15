@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage(Prefs.Key.name.rawValue) var name: String = ""
-    @AppStorage(Prefs.Key.volume.rawValue) var volume: Double = 0.0
+    @AppStorage(Prefs.key(.name)) var name: String = ""
+    @AppStorage(Prefs.key(.volume)) var volume: Double = 0.0
     @State var manager = Manager()
     var body: some View {
         VStack {

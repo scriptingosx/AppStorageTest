@@ -9,11 +9,11 @@ import Foundation
 
 class Manager {    
     var name: String {
-        UserDefaults.standard.string(forKey: Prefs.Key.name.rawValue) ?? ""
+        UserDefaults.standard.string(forKey: Prefs.key(.name)) ?? ""
     }
     
     var volume: Double {
-        UserDefaults.standard.double(forKey: Prefs.Key.volume.rawValue)
+        UserDefaults.standard.double(forKey: Prefs.key(.volume))
     }
     
     func doSomething() {

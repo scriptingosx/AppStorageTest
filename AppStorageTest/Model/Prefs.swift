@@ -10,7 +10,7 @@ import Foundation
 
 struct Prefs {
     
-    let volumeFormatter: NumberFormatter = {
+    static let volumeFormatter: NumberFormatter = {
         var fmt = NumberFormatter()
         fmt.numberStyle = .decimal
         fmt.minimumFractionDigits = 1
@@ -22,6 +22,18 @@ struct Prefs {
     enum Key: String {
         case name
         case volume
+    }
+    
+    static func key(_ key: Key) -> String {
+        return key.rawValue
+    }
+    
+    static func registerDefaults() {
+        var prefs = [String: Any]()
+        prefs[Prefs.key(.name)] = "Pippi Langstrumpf"
+        prefs[Prefs.key(.volume)] = 5.0
+        
+        UserDefaults.standard.register(defaults: prefs)
     }
 
 }
