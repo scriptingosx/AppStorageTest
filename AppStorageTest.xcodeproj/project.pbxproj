@@ -59,12 +59,9 @@
 		C635B0BA2678CE16001EEA82 /* AppStorageTest */ = {
 			isa = PBXGroup;
 			children = (
-				C635B0BB2678CE16001EEA82 /* AppStorageTestApp.swift */,
-				C635B0CD2678D004001EEA82 /* AppDelegate.swift */,
-				C635B0D12678D4E4001EEA82 /* Prefs.swift */,
-				C635B0CB2678CE72001EEA82 /* SettingsView.swift */,
-				C635B0BD2678CE16001EEA82 /* ContentView.swift */,
-				C635B0CF2678D108001EEA82 /* Manager.swift */,
+				C635B0D32678E2C2001EEA82 /* App */,
+				C635B0D52678E307001EEA82 /* Model */,
+				C635B0D62678E310001EEA82 /* View */,
 				C635B0BF2678CE18001EEA82 /* Assets.xcassets */,
 				C635B0C12678CE18001EEA82 /* Preview Content */,
 			);
@@ -77,6 +74,33 @@
 				C635B0C22678CE18001EEA82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C635B0D32678E2C2001EEA82 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C635B0BB2678CE16001EEA82 /* AppStorageTestApp.swift */,
+				C635B0CD2678D004001EEA82 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C635B0D52678E307001EEA82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C635B0D12678D4E4001EEA82 /* Prefs.swift */,
+				C635B0CF2678D108001EEA82 /* Manager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C635B0D62678E310001EEA82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C635B0BD2678CE16001EEA82 /* ContentView.swift */,
+				C635B0CB2678CE72001EEA82 /* SettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
