@@ -36,4 +36,12 @@ struct Prefs {
         UserDefaults.standard.register(defaults: prefs)
     }
 
+    static var name: String {
+        UserDefaults.standard.string(forKey: Prefs.key(.name)) ?? ""
+    }
+    
+    static var volume: Double {
+        UserDefaults.standard.double(forKey: Prefs.key(.volume))
+    }
+
 }

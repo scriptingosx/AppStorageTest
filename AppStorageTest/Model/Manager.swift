@@ -8,16 +8,8 @@
 import Foundation
 
 class Manager {    
-    var name: String {
-        UserDefaults.standard.string(forKey: Prefs.key(.name)) ?? ""
-    }
-    
-    var volume: Double {
-        UserDefaults.standard.double(forKey: Prefs.key(.volume))
-    }
-    
     func doSomething() {
-        print("Hello, \(name)")
-        print("Volume is \(volume)")
+        print("Hello, \(Prefs.name)")
+        print("Volume is \(Prefs.volume)")
     }
 }
